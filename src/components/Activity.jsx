@@ -10,7 +10,7 @@ function Activity({ level, children }){
     return (
         <div style={{ backgroundColor: done ? "green" : "red" }}>
             <h3>Importanza {level}</h3>
-            <p>{children}</p>
+            <p className="text-3xl font-bold underline">{children}</p>
             <button onClick={toggleActivity}>Done</button>
         </div>
     )
